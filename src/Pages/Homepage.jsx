@@ -21,9 +21,9 @@ export default function Homepage() {
         {/* Service Categories */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
           {[
-            { name: "Home Cleaning", img: "Images/banner-1.jpg" },
-            { name: "Plumbing", img: "Images/banner-1.jpg" },
-            { name: "Beauty & Salon", img: "Images/banner-1.jpg" },
+            { name: "Home Cleaning", img: "assets/Images/banner-1.jpg" },
+            { name: "Plumbing", img: "assets/Images/banner-1.jpg" },
+            { name: "Beauty & Salon", img: "assets/Images/banner-1.jpg" },
           ].map((service, index) => (
             <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-lg text-center">
               <img src={service.img} alt={service.name} className="w-full h-40 object-cover rounded-md mb-4" />

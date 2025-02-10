@@ -22,7 +22,7 @@ export default function Navbar() {
     <div className="relative">
       <div 
         className="fixed inset-0 bg-cover bg-center z-[-2] w-full h-full"
-        style={{ backgroundImage: "url('Images/banner-2.jpg')", backgroundAttachment: "fixed"}}
+        style={{ backgroundImage: "url('assets/Images/banner-2.jpg')", backgroundAttachment: "fixed"}}
       ></div>
       
       <div className="fixed inset-0 bg-gradient-to-r from-black/60 to-transparent z-[-1] w-full h-full"></div>
