@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.banner-1-bg {
+background-image: "url('/Images/banner-1.jpg')";
+background-attachment: "fixed" 
+}
+
+@keyframes moveDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  .landing-text {
+    animation: moveDown 0.8s linear;
+  }
+  
