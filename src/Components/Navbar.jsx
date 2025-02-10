@@ -31,14 +31,14 @@ export default function Navbar() {
         className={`bg-opacity-90 bg-cover bg-center text-white fixed w-full top-0 z-50 transition-shadow duration-300 ${hasShadow ? 'shadow-lg' : ''}`} 
         style={{ backgroundImage: "url('https://source.unsplash.com/1600x400/?abstract')", backgroundAttachment: "fixed" }}
       >
-        <div className="container mx-auto px-6 py-4 flex justify-start gap-20 items-center">
+        <div className="container mx-auto px-6 py-4 flex sm:justify-start justify-between gap-20 items-center">
           <a href="#" className="text-3xl font-bold">Jeldhi</a>
           
           <div className="hidden md:flex space-x-20 text-lg">
             <a href="#" className="hover:text-gray-200 transition">Home</a>
             <a href="#" className="hover:text-gray-200 transition">About</a>
             <a href="#" className="hover:text-gray-200 transition">Services</a>
-            <a href="#" className="hover:text-gray-200 transition">Contact</a>
+            <a href="/login" className="hover:text-gray-200 transition">Login</a>
           </div>
           
           <button className="md:hidden focus:outline-none" onClick={() => setIsOpen(!isOpen)}>
@@ -58,7 +58,7 @@ export default function Navbar() {
               <a href="#" className="hover:text-gray-200 transition">Home</a>
               <a href="#" className="hover:text-gray-200 transition">About</a>
               <a href="#" className="hover:text-gray-200 transition">Services</a>
-              <a href="#" className="hover:text-gray-200 transition">Contact</a>
+              <a href="/login" className="hover:text-gray-200 transition">Login</a>
             </div>
           </motion.div>
         )}
